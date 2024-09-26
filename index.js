@@ -68,10 +68,10 @@ const sleep = (ms) => new Promise((res) => setTimeout(res, ms))
     const oldPriceElementRank = oldPriceElement
       ? oldPriceElement.querySelector('span .Price_fraction__lcfu_')
       : null
-    const ratingElement = document.querySelector('meta[itemprop="ratingValue"]') // Замените на правильный селектор
+    const ratingElement = document.querySelector('meta[itemprop="ratingValue"]')
     const reviewsElement = document.querySelector(
       'meta[itemprop="reviewCount"]'
-    ) // Замените на правильный селектор
+    )
 
     const price = priceElement
       ? priceElement.textContent.replace(/[^0-9,.]/g, '')
